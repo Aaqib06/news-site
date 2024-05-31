@@ -1,4 +1,9 @@
 <?php include "header.php";
+if($_SESSION["user_role"]=='0'){
+ 
+    header("location:{$hostname}/admin/post.php");
+
+}
 
 
 if (isset($_POST['submit'])) {
